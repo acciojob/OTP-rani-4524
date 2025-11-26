@@ -1,45 +1,61 @@
-/*  your css code here. If applicable */
+   body {
+        font-family: Arial, sans-serif;
+        background: #f7f8fa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
+    .main-box {
+        background: white;
+        width: 80%;
+        max-width: 900px;
+        padding: 50px;
+        border: 3px solid #000;
+        border-radius: 20px;
+        text-align: center;
+    }
 
-        #verification_heading {
-            font-size: 32px;
-            font-weight: bold;
-        }
+    #verification_heading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 
-        #verification_subtext {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #555;
-        }
+    #verification_subtext {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 40px;
+    }
 
-        .code-container {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 18px;
-        }
+    .code-container {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 40px;
+    }
 
-        .code {
-            width: 70px;
-            height: 90px;
-            font-size: 45px;
-            text-align: center;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
+    .code {
+        width: 70px;
+        height: 90px;
+        border: 2px solid #E6E6E6;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        color: #555;
+        background: #fff;
+    }
 
-        .note {
-            margin-top: 40px;
-            background: #e3e3e3;
-            padding: 15px;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
-            color: #666;
-        }
+    .info-box {
+        width: 70%;
+        margin: 0 auto;
+        background: #e9eaed;
+        padding: 15px;
+        border-radius: 8px;
+        color: #666;
+        font-size: 14px;
+    }
