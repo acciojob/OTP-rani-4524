@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #verification_heading {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        #verification_subtext {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .code-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .code {
+            width: 70px;
+            height: 90px;
+            font-size: 45px;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .note {
+            margin-top: 40px;
+            background: #e3e3e3;
+            padding: 15px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            color: #666;
+        }
