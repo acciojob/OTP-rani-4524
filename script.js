@@ -1,29 +1,33 @@
 const codes = document.querySelectorAll(".code");
 
+// focus first box automatically
 codes[0].focus();
 
-codes.forEach((code, idx) => {
+codes.forEach((code, index) => {
 
     code.addEventListener("keydown", (e) => {
 
-        // allow only numbers and backspace
+        // typing forward movement (“0–9” keys)
         if (e.key >= 0 && e.key <= 9) {
-            code.value = "";
+
+            code.value = "";  // clear before writing
+
             setTimeout(() => {
-                if (idx < 5) {
-                    codes[idx + 1].focus();
+                if (index < 5) {
+                    codes[index + 1].focus();
                 }
             }, 10);
         }
 
+        // backspace behavior
         if (e.key === "Backspace") {
             code.value = "";
+
             setTimeout(() => {
-                if (idx > 0) {
-                    codes[idx - 1].focus();
+                if (index > 0) {
+                    codes[index - 1].focus();
                 }
             }, 10);
         }
     });
-
 });
